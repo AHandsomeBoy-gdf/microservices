@@ -1,0 +1,9 @@
+zuul:
+  #保证路由匹配顺序
+  routes:
+    hello-service-ext:
+      path: /hello-service/ext/**
+      serviceId: hello-service-ext
+    hello-service:
+      path: /hello-service/**
+      serviceId: hello-service
