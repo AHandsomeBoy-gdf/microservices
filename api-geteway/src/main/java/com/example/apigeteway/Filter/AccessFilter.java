@@ -22,7 +22,7 @@ public class AccessFilter extends ZuulFilter {
     }
 
     /**
-     * 过滤器的执行顺序
+     * 过滤器的执行顺序，越小优先级越高
      * @return
      */
     @Override

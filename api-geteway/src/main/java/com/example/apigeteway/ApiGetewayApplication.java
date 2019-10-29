@@ -1,6 +1,7 @@
 package com.example.apigeteway;
 
 import com.example.apigeteway.Filter.AccessFilter;
+import com.example.apigeteway.Filter.ThrowExceptionFilter;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
@@ -19,6 +20,11 @@ public class ApiGetewayApplication {
     public AccessFilter accessFilter() {
         return new AccessFilter();
     }
+
+//    @Bean
+//    public ThrowExceptionFilter throwExceptionFilter() {
+//        return new ThrowExceptionFilter();
+//    }
 
     /**
      * 自定义路由映射规则
